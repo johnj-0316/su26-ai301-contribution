@@ -1,6 +1,5 @@
 # su26-ai301-contribution
-# Contribution [#]: [Worlds Without Number] Text is barely readable/showing the wrong color in the roll macro window
- #13773
+# Contribution [#13773]: [Worlds Without Number] Text is barely readable/showing the wrong color in the roll macro window
 
 **Contribution Number:** [**1** / 2 / 3]  
 **Student:** [John Martin]
