@@ -1,17 +1,18 @@
 # su26-ai301-contribution
-# Contribution [#]: [Issue Title]
+# Contribution [#]: [Worlds Without Number] Text is barely readable/showing the wrong color in the roll macro window
+ #13773
 
-**Contribution Number:** [1 / 2 / 3]  
-**Student:** John Martin
-**Issue:** [GitHub issue link]  
-**Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
+**Contribution Number:** [**1** / 2 / 3]  
+**Student:** [John Martin]
+**Issue:** [https://github.com/Roll20/roll20-character-sheets/issues/13773]  
+**Status:** Phase 1 Complete
 
 ---
 
 ## Why I Chose This Issue
 
 [1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
-
+This issue interests me because of my recent accomplishments in CSS. I've spent a lot of time practicing and learning CSS properties and developing an eye for good UI/UX. I want to put these newly trained skills to use by fixing the styling issue. Doing so will help reaffirm my newfound work in learning CSS, as well as giving me an opportunity to contribute to a real project! I hope to learn any nuances when editing CSS in an open project, as well as pushing the issue back into the origin to build muscle memory with the command lines.
 ---
 
 ## Understanding the Issue
