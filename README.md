@@ -4,7 +4,7 @@
 **Contribution Number:** [**1** / 2 / 3]  
 **Student:** [John Martin]
 **Issue:** [https://github.com/Roll20/roll20-character-sheets/issues/13773]  
-**Status:** [**Phase I** / Phase II / Phase III / Phase IV] [In Progress / **Complete**]
+**Status:** [Phase I / **Phase II** / Phase III / Phase IV] [In Progress / **Complete**]
 
 ---
 
@@ -38,19 +38,28 @@ This issue interests me because of my recent accomplishments in CSS. I've spent 
 
 ### Environment Setup
 
-[Notes on setting up your local development environment - challenges you faced, how you solved them]
+All reproduction takes place on the roll20 website. Requires an account to be made, a game to be created, and knowledge about roll macros, the chat feature, and how to trigger it.
+Note: Choose Without Number System By Sine Nomine (NOT Worlds Without Number)
 
 ### Steps to Reproduce
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+1. Create a Roll20 account if not already.
+2. Go to top bar and click Play --> My Games --> Create New Game
+3. Under "Recommended: Pick a Character Sheet," choose Without Number System By Sine Nomine --> Launch Game
+4. On the right sidebar, go to the top and click the Gear icon (the last icon on the right)
+5. Scroll down, and under Accessibility, toggle Dark Mode ON.
+6. Then on the same sidebar at the top, click the "book icon" (hover over and it should say journal / the third icon from the left), then click + Character --> Save Changes
+7. Once the character loads, under Saving Throws, click any of the 4 buttons above the label (Physical, Mental, etc.). A message should appear in the chat (first icon at the top/bubble messages)
+8. Next to PC/NPC and the pencil, click the Gear icon.
+9. Under system options, click the dropdown next to System list and choose between Worlds Without Number, Cities Without Number, etc.
+10. Repeat step 7 through 9 until enough messages are in the chat to highlight the issue.
+11. The chat should show result boxes with a colored name, but dark gray/black text inside holding the results (should faintly see numbers to the right) that is barely visible with the background.
 
 ### Reproduction Evidence
 
-- **Commit showing reproduction:** [Link to commit in your fork]
-- **Screenshots/logs:** [If applicable]
-- **My findings:** [What you discovered during reproduction]
+- **Commit showing reproduction:** [https://github.com/johnj-0316/roll20-character-sheets/tree/fix-issue-worlds-without-number-text-contrast]
+- **Screenshots/logs:** <img width="296" height="357" alt="Screenshot 2026-06-17 at 1 32 39 AM" src="https://github.com/user-attachments/assets/4ea5d832-6008-4d09-a427-b43b45ea6d2a" />
+- **My findings:** [Only affects Dark Mode]
 
 ---
 
@@ -58,30 +67,30 @@ This issue interests me because of my recent accomplishments in CSS. I've spent 
 
 ### Analysis
 
-[Your analysis of the root cause - what's causing the issue?]
+Text color styling upon dark mode class application to surrounding div does not change, meaning text stays same color as if it were light mode.
 
 ### Proposed Solution
 
-[High-level description of your fix approach]
+Either lighten the background in dark mode, or, the recommended/proposed solution by the person bringing up the issue, change the text color (either manually or adding a toggle) to make the text readable.
 
 ### Implementation Plan
 
 Using UMPIRE framework (adapted):
 
-**Understand:** [Restate the problem]
+**Understand:** Text color contrast/visibility problem in CSS with a specific styling sheet
 
-**Match:** [What similar patterns/solutions exist in the codebase?]
+**Match:** Mostly just identifying and editing the problem directly while adding flexibility for the user (toggle button)
 
 **Plan:** [Step-by-step implementation plan]
-1. [Modify file X to do Y]
-2. [Add function Z]
-3. [Update tests]
+1. Modify scss/roll_template.scss, or at least a scss file in the directory.
+2. Change the background and/or color to a contrast about 7 according to standard.
+4. Recreate changes in the actual dev-console to mimic applied changes.
 
-**Implement:** [Link to your branch/commits as you work]
+**Implement:** [https://github.com/johnj-0316/roll20-character-sheets/tree/fix-issue-worlds-without-number-text-contrast]
 
-**Review:** [Self-review checklist - does it follow the project's contribution guidelines?]
+**Review:** [Guidelines mostly specify using clean HTML/CSS code, no table, and no harassment. Main result should be Chrome/Firefox compatible as well.]
 
-**Evaluate:** [How will you verify it works?]
+**Evaluate:** [Change issues first in dev console, then in the css file in VSCode once correctly traced/identified, then recreate and solve problems in Chrome/Firefox. If necessary, will ask AI to find the best color scheme/readable syntax.]
 
 ---
 
