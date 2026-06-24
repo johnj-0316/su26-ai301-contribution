@@ -96,28 +96,27 @@ Using UMPIRE framework (adapted):
 
 ## Testing Strategy
 
-### Unit Tests
-
-- [ ] Test case 1: [Description]
-- [ ] Test case 2: [Description]
-- [ ] Test case 3: [Description]
+### Unit Tests (Since it's just CSS, I won't write code, but play around with the HTML environment in the DevTools while the fix is active to spot any edge cases.
+- [X] Test case 1: Works after dark mode is toggled on and off again.
+- [X] Test case 2: Works after creating more roll macro templates in the chat (consistent)
+- [X] Test case 3: Works after changing tabs and changing between the System list.
 
 ### Integration Tests
 
-- [ ] Integration scenario 1
-- [ ] Integration scenario 2
+- [X] Integration scenario 1
+- [X] Integration scenario 2
 
 ### Manual Testing
 
-[What you tested manually and results]
+[Removing "color: initial" on the dark mode class fixes the issue, but likely not the intended solution. Moved designated color property down to its first child to add more specificity instead.]
 
 ---
 
 ## Implementation Notes
 
-### Week [X] Progress
+### Week [3] Progress
 
-[What you built this week, challenges faced, decisions made]
+I changed the font color of the text in the roll macro attribute to its correct shade. After testing in the DevTools console, I noticed that dark mode had its own class with one property: "color: initial". This meant that I was likely not allowed to change anything about the class, as no other issues facing contrast problems had, and that the color property was overriding the one on the parent div. As a result, I had to move the color property down a class to add more specificity to the property, allowing it to take precedence over the one in the dark mode class. By doing so, I refrain from adding any new code while fixing the bug entirely.
 
 ### Week [Y] Progress
 
@@ -125,9 +124,9 @@ Using UMPIRE framework (adapted):
 
 ### Code Changes
 
-- **Files modified:** [List]
-- **Key commits:** [Links to important commits]
-- **Approach decisions:** [Why you chose certain approaches]
+- **Files modified:** [Without Numbers/Source/scss/roll_template.scss]
+- **Key commits:** [https://github.com/johnj-0316/roll20-character-sheets/commit/c3743065579f85e7a7e1ec7aef908d00b4a89495]
+- **Approach decisions:** [No code additions while still fixing the bug, keeping the size of the file the same]
 
 ---
 
