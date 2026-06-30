@@ -4,7 +4,7 @@
 **Contribution Number:** [**1** / 2 / 3]  
 **Student:** [John Martin]
 **Issue:** [https://github.com/Roll20/roll20-character-sheets/issues/13773]  
-**Status:** [Phase I / **Phase II** / Phase III / Phase IV] [In Progress / **Complete**]
+**Status:** [**Phase IV**] [**Complete**]
 
 ---
 
