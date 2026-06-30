@@ -118,7 +118,7 @@ Using UMPIRE framework (adapted):
 
 I changed the font color of the text in the roll macro attribute to its correct shade. After testing in the DevTools console, I noticed that dark mode had its own class with one property: "color: initial". This meant that I was likely not allowed to change anything about the class, as no other issues facing contrast problems had, and that the color property was overriding the one on the parent div. As a result, I had to move the color property down a class to add more specificity to the property, allowing it to take precedence over the one in the dark mode class. By doing so, I refrain from adding any new code while fixing the bug entirely.
 
-### Week [Y] Progress
+### Week [4] Progress
 
 [Continue documenting as you work]
 
@@ -132,15 +132,15 @@ I changed the font color of the text in the roll macro attribute to its correct 
 
 ## Pull Request
 
-**PR Link:** [GitHub PR URL when submitted]
+**PR Link:** [https://github.com/Roll20/roll20-character-sheets/pull/15236]
 
-**PR Description:** [Draft or final PR description - much of the content above can be adapted]
+**PR Description:** [PR moves the color attribute on the class (.sheet-rolltemplate-swn-xxxx) to a more specific class (.sheet-container). This avoids new code and editing any other classes outside the scope of the stylesheet.]
 
 **Maintainer Feedback:**
-- [Date]: [Summary of feedback received]
+- [Date]: [Summary of feedback received]: No feedback received as of 6:13PM ET on June 30, 2026. Next steps will be to look into more issues on the same or different repositories!
 - [Date]: [How you addressed it]
 
-**Status:** [Awaiting review / Iterating / Approved / Merged]
+**Status:** [**Awaiting review **/ Iterating / Approved / Merged]
 
 ---
 
@@ -148,20 +148,20 @@ I changed the font color of the text in the roll macro attribute to its correct 
 
 ### Technical Skills Gained
 
-[What you learned technically]
+[What you learned technically]: A small window into the many actions I will take and have to build into muscle memory in order to contribute to open source!
 
 ### Challenges Overcome
 
-[What was hard and how you solved it]
+[Definitely replicating the environment and recreating the issue! Of course, there were parts where I was nervous to click something wrong and get confused on how to revert any mistakes. Other than that, it was definitely recreating an issue on a website I've never used!]
 
 ### What I'd Do Differently Next Time
 
-[Reflection on your process]
+[Spend more time reading documentation and researching the website before immediately jumping it. It would've saved a lot of time if I completely understood the issue to recreate instead of guessing along the way.]
 
 ---
 
 ## Resources Used
 
-- [Link to helpful documentation]
+- [Link to helpful documentation]: https://wiki.roll20.net/Character_Sheet_Development/Dark_Mode#Roll_Template
 - [Tutorial or Stack Overflow post that helped]
-- [GitHub issues or discussions that helped]
+- [GitHub issues or discussions that helped]: The CodePath Step-By-Step Procedures really help. Besides some help from Gemini for quick pointers on what to click and buttons to press along the way, most of my help came from the procedures in the hub on CodePath.
