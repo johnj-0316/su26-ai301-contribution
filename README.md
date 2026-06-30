@@ -120,7 +120,7 @@ I changed the font color of the text in the roll macro attribute to its correct 
 
 ### Week [4] Progress
 
-[Continue documenting as you work]
+Currently in the process of reviewing my PR, keeping it updated, and submitting for review! Making sure the code passes all the tests is definitely hard, but not as hard as recreating the issue in an environment I have no experience working with.
 
 ### Code Changes
 
