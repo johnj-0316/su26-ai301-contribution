@@ -1,9 +1,8 @@
 # su26-ai301-contribution
-# Contribution [#1389]: COALESCE isn`t work
-
+# Contribution [#894]: Add accessibility labels to Modal component
 **Contribution Number:** [1 / **2** / 3]  
 **Student:** [John Martin]
-**Issue:** [https://github.com/appbaseio/reactivesearch/issues/414]  
+**Issue:** [https://github.com/Vets-Who-Code/vets-who-code-app/issues/894]  
 **Status:** [**Phase 2**] [**Complete**]
 
 ---
