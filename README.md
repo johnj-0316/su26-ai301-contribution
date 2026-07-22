@@ -11,28 +11,27 @@
 ## Why I Chose This Issue
 
 [1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
-This issue interests me because of my focus on consistently practicing SQL, along with learning JavaScript. I never understood the idea of combining SQL, a backend/database language, with JS, a frontend language, so learning it now in preparation for Next.js will really help my learning process. I know enough about both languages to help contribute and fix the inconsistency described in the issue.
+
+This issue interests me because of my constant ignorance of ARIA labels and accessibility in my web projects. Whether it's out of laziness or a lack of experience with the screen reader, I make implementations that entirely neglect those who use screen readers, potentially making their experiences more difficulty. Having a grasp of good HTML usage, and more specifically ARIA, will help me sharpen the skills I need to put them in my own projects.
 ---
 
 ## Understanding the Issue
 
 ### Problem Description
 
-Basically, the COALESCE keyword is not behaving as it would in SQL and returning inaccurate values.
+Basically, the .tsx file is missing a lot of aria labels that don't have the best accessibility features.  
 
 ### Expected Behavior
 
-In the example in the issue, COALESCE(sample,""), where sample is null, should return "", but instead returns sample, which contradicts the function.
+In the example in the issue, some tags are missing the aria label or aria-modal entirely.
 
 ### Current Behavior
 
-COALESCE, which should return the first non-null value in its parameters, is not working and returning null as a value (which it will do when there aren't any non-null values) even when there are non-null characters.
+The aria attributes aren't there, so screen readers will default to a certain behavior or completely ignore important information about the page.
 
 ### Affected Components
 
-src/61date.js
-dist/alasql.js
-dist/alasql.min.js
+src/components/ui/modal/modal.tsx
 
 ---
 
