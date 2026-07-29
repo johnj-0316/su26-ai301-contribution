@@ -98,7 +98,8 @@ Ensure keyboard navigation works (Tab, Escape)
 Verify focus trap works correctly
 
 **Implement:** 
-
+The aria labels seemed to track the class names in the suggestion, but the class names did not match with the current ones in the repo (presumably from commits further down the line).
+As a result, I've modified the suggestion to include the new class names from components that matched or were similar to the functionality of the elements in the example. For instance, the suggestion included a close <button> tag in the modal, but the repo instead has a modal-close component entirely.
 
 **Review:** 
 Make sure guidelines are followed and code is clean (follow the template in CONTRIBUTING.md and make sure all edited files are tracked)
@@ -127,16 +128,19 @@ Use screen reader and complete tests (modal still works, screen reader reads out
 ## Implementation Notes
 
 ### Week [3] Progress
+2/3 done with Phase III, but I need to supply integration tests using the screen reader. The modal component doesn't seem to be used anywhere inside of the project, so some tests will also need to be conducted to test it there. Moreover, the suggested improvements don't match the current folder. I tried commenting on the issue to see what the maintainer wants, but it seems like they've either blocked me or removed commenting access. Either way, I've added the correct aria-labels according to the breakdown into different components and class names.
+
+Will do tests on week 9. No PR until tests done.
 
 ### Week [4] Progress
 
 
 ### Code Changes
 
-- **Files modified:** 
-- **Key commits:** 
+- **Files modified:** src/components/ui/modal/modal.tsx, src/components/ui/modal/modal-close.tsx
+- **Key commits:** (fix) added aria-labels to modal-close.tsx and modal.tsx
 - **Approach decisions:** 
-
+The modal ui folder and component did not match the example suggestion, so I first tried to ask the maintainer. After no response, I've added the aria attributes to match the new class names while also keeping in line with the tasks required.
 ---
 
 ## Pull Request
