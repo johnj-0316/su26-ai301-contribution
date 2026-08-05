@@ -3,7 +3,7 @@
 **Contribution Number:** [1 / **2** / 3]  
 **Student:** [John Martin]
 **Issue:** [https://github.com/Vets-Who-Code/vets-who-code-app/issues/894]  
-**Status:** [**Phase 3**] [**In Progress**]
+**Status:** [**Phase 3**] [**Completed**]
 
 ---
 
@@ -111,17 +111,16 @@ Use screen reader and complete tests (modal still works, screen reader reads out
 ## Testing Strategy
 
 ### Unit Tests 
-- [] Test case 1: 
-- [] Test case 2: 
-- [] Test case 3: 
+- [x] Test case 1: Render Modal with ModalHeader, ModalBody, and ModalClose; verify dialog exists and has role="dialog", aria-modal="true", aria-labelledby="modal-header", and aria-describedby="modal-body"
+- [x] Test case 2: Verify ModalHeader renders id="modal-header" and ModalBody renders id="modal-body" so the ARIA references resolve correctly
+- [x] Test case 3: Verify ModalClose button has aria-label="Close modal" and that its decorative content uses aria-hidden="true"
 
 ### Integration Tests
-
-- [] Integration scenario 1
-- [] Integration scenario 2
+- [x] Integration scenario 1: Render a full modal usage path and confirm opening shows the dialog and the correct ARIA
+- [x]Integration scenario 2: Verify keyboard behavior through Escape triggers onClose, and Tab/Shift keeping focus trapped inside the modal content
 
 ### Manual Testing
-
+Open modal, confirm screen reader announcements, and tab/shift navigation functions as expected. Detailed actions provided above.
 
 ---
 
@@ -137,7 +136,7 @@ Will do tests on week 9. No PR until tests done.
 
 ### Code Changes
 
-- **Files modified:** src/components/ui/modal/modal.tsx, src/components/ui/modal/modal-close.tsx
+- **Files modified:** vets-who-code-app/src/components/ui/modal/modal-header.tsx, vets-who-code-app/src/components/ui/modal/modal-header.tsx
 - **Key commits:** (fix) added aria-labels to modal-close.tsx and modal.tsx
 - **Approach decisions:** 
 The modal ui folder and component did not match the example suggestion, so I first tried to ask the maintainer. After no response, I've added the aria attributes to match the new class names while also keeping in line with the tasks required.
