@@ -117,7 +117,7 @@ Use screen reader and complete tests (modal still works, screen reader reads out
 
 ### Integration Tests
 - [x] Integration scenario 1: Render a full modal usage path and confirm opening shows the dialog and the correct ARIA
-- [x]Integration scenario 2: Verify keyboard behavior through Escape triggers onClose, and Tab/Shift keeping focus trapped inside the modal content
+- [x] Integration scenario 2: Verify keyboard behavior through Escape triggers onClose, and Tab/Shift keeping focus trapped inside the modal content
 
 ### Manual Testing
 Open modal, confirm screen reader announcements, and tab/shift navigation functions as expected. Detailed actions provided above.
