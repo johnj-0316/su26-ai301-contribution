@@ -3,7 +3,7 @@
 **Contribution Number:** [1 / **2** / 3]  
 **Student:** [John Martin]
 **Issue:** [https://github.com/Vets-Who-Code/vets-who-code-app/issues/894]  
-**Status:** [**Phase 3**] [**Completed**]
+**Status:** [**Phase 4**] [**Completed**]
 
 ---
 
@@ -144,15 +144,16 @@ The modal ui folder and component did not match the example suggestion, so I fir
 
 ## Pull Request
 
-**PR Link:** 
+**PR Link:** None
 
 **PR Description:** 
+Can't submit a PR, as I've either been blocked or blacklisted from the repo.
 
 **Maintainer Feedback:**
-- [Date]: [Summary of feedback received] 
-- [Date]: [How you addressed it]
+<img width="1290" height="616" alt="Screenshot of cannot perform this action at top of page" src="https://github.com/user-attachments/assets/18178c0c-19fb-4322-963e-3531c7056ed9" />
 
-**Status:** [Awaiting review/ Iterating / Approved / Merged]
+
+**Status:** [Blocked]
 
 ---
 
@@ -160,18 +161,18 @@ The modal ui folder and component did not match the example suggestion, so I fir
 
 ### Technical Skills Gained
 
-[What you learned technically]: 
+[What you learned technically]: TypeScript and ARIA labels, as well as the importance of a screen reader.
 
 ### Challenges Overcome
-
+Learning TypeScript and understanding Docker, while also configuring the project and running it locally.
 
 ### What I'd Do Differently Next Time
-
+Clearing things up with a maintainer before doing anything else!
 
 ---
 
 ## Resources Used
 
-- [Link to helpful documentation]: 
+- [Link to helpful documentation]: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label
 - [Tutorial or Stack Overflow post that helped]
-- [GitHub issues or discussions that helped]: 
+- [GitHub issues or discussions that helped]: https://github.com/Vets-Who-Code/vets-who-code-app/pull/1242
